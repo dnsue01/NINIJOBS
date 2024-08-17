@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <p>Title</p>
+        <input type="text" name="" id="" class="form-control"/>
+      </div>
+      <div class="col-5">
+        <p>Where...</p>
+        <select name="" id="" class="select">
+            <option>Select a city</option>
+            @for (city of citiesArray; track $index) {
+                <option>{{city}}</option>
+            }
+        </select>
+      </div>
+      <div class="col-2 search">
+        <button class="btn ">Seacrh</button>
+      </div>
+    </div>
+  </div>
+</div>

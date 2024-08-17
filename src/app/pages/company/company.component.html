@@ -1,0 +1,12 @@
+@if (JobArray.length!=0) {
+    <app-nav-bar></app-nav-bar>
+<h1>{{ JobArray[0].company_name }} Jobs!</h1>
+<div class="container">
+  <ol>
+    @for (job of JobArray; track $index) {
+    <li>{{ job.title }}</li>
+    }
+  </ol>
+</div>
+
+}

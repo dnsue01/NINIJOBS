@@ -1,0 +1,5 @@
+<ol>
+  @for (job of JobArray; track $index) {
+  <li  routerLink='company/{{job.company_name.replaceAll(" ","")}}'>{{ job.company_name }}</li>
+  }
+</ol>
